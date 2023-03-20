@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+<!-- 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>"> -->
 </head>
 
 <body>
@@ -361,6 +361,42 @@
               </p>
             </td>
           </tr>
+		
+          <tr onmouseout="mira_stop()" onmouseover="mira_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/lodonet.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function mira_start() {
+                  document.getElementById('mira_image').style.opacity = "1";
+                }
+
+                function mira_stop() {
+                  document.getElementById('mira_image').style.opacity = "0";
+                }
+                mira_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2009.00164.pdf">
+                <papertitle>LodoNet: A Deep Neural Network with 2D Keypoint Matching for 3D LiDAR Odometry Estimation </papertitle>
+              </a>
+              <br>
+              <strong>Ce Zheng</strong>,
+              Yecheng Lyu,
+	      Ming Li, 
+	      Ziming Zhang.
+              <br>
+              <em> ACM International Conference on Multimedia(<strong>ACM MM</strong>)</em>, 2020
+              <br>
+              <a href="https://arxiv.org/pdf/2009.00164.pdf">paper</a> &nbsp/&nbsp
+              <p></p>
+              <p>
+                A new approach that extract the matched 2D keypoint pairs(MKPs) for 3D LiDAR Odometry.
+              </p>
+            </td>
+          </tr>	
 				
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
           <tr>
