@@ -72,7 +72,7 @@
               <heading>Research</heading>
               <p>
                 I have a broad interest in deep learning and computer vision. My current research focuses on Human Pose Estimation (HPE) and Human Mesh Recovery (HMR).
-                Below is a <strong>selected</strong> list of my works. Full publication can be fund at my google scholar page. 
+                Below is a <strong>selected</strong> list of my works. Full publication can be found on my Google Scholar page. 
               </p>
             </td>
           </tr>
@@ -146,6 +146,7 @@
                 mira_stop()
               </script>
             </td>
+		  
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://arxiv.org/pdf/2205.15448.pdf">
                 <papertitle>FeatER: An Efficient Network for Human Reconstruction via Feature Map-Based TransformER</papertitle>
@@ -166,31 +167,47 @@
                 An efficient transformer-based method for human pose estimation and mesh reconstruction.
               </p>
             </td>
+	</tr>
 
+        <tr onmouseout="mira_stop()" onmouseover="mira_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <!-- <div class="two" id='mira_image'> -->
+                  <!-- <img src='images/capose.jpg' width="160"></div> -->
+                <img src='images/feater.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function mira_start() {
+                  document.getElementById('mira_image').style.opacity = "1";
+                }
 
-	  <tr>
-            <td style="padding:10px;width:30%;vertical-align:middle">
-              <img src="./images/capose.jpg" width="100%">
+                function mira_stop() {
+                  document.getElementById('mira_image').style.opacity = "0";
+                }
+                mira_stop()
+              </script>
             </td>
-            <td style="padding:20px;width:70%;vertical-align:middle">
-              <papertitle>Context-Aware PoseFormer: Single Image Beats Hundreds for 3D Human Pose Estimation</papertitle>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="">
+                <papertitle>Context-Aware PoseFormer: Single Image Beats Hundreds for 3D Human Pose Estimation</papertitle>
+              </a>
               <br>
-	      <a href="https://qitaozhao.github.io/">Qitao Zhao</a>,    
-              <strong>Ce Zheng</strong>,
-              <a href="https://zczcwh.github.io/">Ce Zheng</a>,
-              <a href="https://humanperception.github.io/">Mengyuan Liu</a>,
-              <a href="https://www.crcv.ucf.edu/chenchen/">Chen Chen</a>
+	      Qitao Zhao
+              <strong>Ce Zheng</strong>, 
+              Mengyuan Liu,
+	      Chen Chen.	    
               <br>
-              Thirty-seventh Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2023
+              <em> Thirty-seventh Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2023
               <br>
-              Coming soon.
-              <!-- <a href="https://arxiv.org/pdf/2303.17472.pdf">paper</a> /
-              <a href="https://qitaozhao.github.io/PoseFormerV2">project page</a> / 
-              <a href="https://github.com/QitaoZhao/PoseFormerV2">code</a> /
-              <a href="https://www.youtube.com/watch?v=2xVNrGpGldM">video</a> -->
+              <a href="">paper</a> &nbsp/&nbsp
+              <a href="">project page</a>
               <p></p>
+              <p>
+                Coming soon.
+              </p>
             </td>
-         </tr>
+	</tr>
+
 		
           </tr>
           <tr onmouseout="mira_stop()" onmouseover="mira_start()">
