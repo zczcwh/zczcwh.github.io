@@ -20,7 +20,7 @@
               <p style="text-align:center">
                 <name>Ce Zheng</name>
               </p>
-              <p style="font-size:16px">I am currently a Postdoctoral Fellow at the <a href="https://www.ri.cmu.edu/" style="font-size:16px">Robotics Institute</a>, <a href="https://www.cmu.edu/" style="font-size:16px">Carnegie Mellon University</a>, working under the guidance of <a href="https://www.laszlojeni.com/" style="font-size:16px">Prof. László A. Jeni</a>.
+              <p style="font-size:16px">I'm an incoming faculty member at <span style="display: inline-block; width: 120px; height: 1.2em; background-color: black; vertical-align: middle;"></span>. Previously I was a Postdoctoral Fellow at the <a href="https://www.ri.cmu.edu/" style="font-size:16px">Robotics Institute</a>, <a href="https://www.cmu.edu/" style="font-size:16px">Carnegie Mellon University</a>, working under the guidance of <a href="https://www.laszlojeni.com/" style="font-size:16px">Prof. László A. Jeni</a>.
 		I obtained my Ph.D. degree at <a href="https://www.crcv.ucf.edu/" style="font-size:16px">Center for Research in Computer Vision (CRCV)</a> at University of Central Florida (UCF)
 		under the supervision of <a href="https://www.crcv.ucf.edu/chenchen/index.html" style="font-size:16px">Prof. Chen Chen</a>. </p>
               <p style="font-size:16px"> Before joining UCF, I obtained my Master's degree at Tufts University in Aug 2019, advised by <a href="https://facultyprofiles.tufts.edu/shuchin-aeron" style="font-size:16px">Prof. Shuchin Aeron</a> and <a href="https://facultyprofiles.tufts.edu/eric-miller" style="font-size:16px">Prof. Eric Miller</a>. 
@@ -49,9 +49,8 @@
         </p>
         <ul>  
           <li>3D Vision, Human Pose Estimation and Mesh Recovery,</li>   
-          <li>Efficient Networks,</li>    
+          <li>Human-centric VLA and VLM </li>    
           <li>Generative AI (Diffusion-based Generation/Synthesis),</li>    
-          <li>Vision Language Models for Human Understanding,</li>   
           <li>...</li> 
         </ul>
         <p>Below is a <strong>selected</strong> list of my works. The full publication can be found on my Google Scholar page. <font color="red">If you are interested in these topics and want to work with me, please don't hesitate to reach out to me via email.</font></p> 
@@ -92,6 +91,10 @@
             <!-- <p>In reverse chronological order:</p> -->
             <ul>
 	      <li>
+                    <strong>2025-02:</strong> Our paper about online Human Mesh Recovery has been accepted by CVPR 2026!
+		  <li>
+                    <strong>2025-02:</strong> Our paper about Multimodal Reasoning has been accepted by AAAI 2026!
+		  <li>
                     <strong>2025-02:</strong> Our paper about In-Bed Human Mesh Recovery has been accepted by CVPR 2025!
 	      <li>
 		    <strong>2025-02:</strong> We are organizing <a href="https://beam-workshop2025.github.io/" style="font-size:16px">The First Workshop on Benchmarking and Expanding AI Multimodal Approaches at CVPR 2025</a>.!
@@ -167,7 +170,7 @@
               <a href="https://sceneadapt.github.io/">project page</a>
               <p></p>
               <p>
-                we introduce SceneAdapt, a framework that injects scene awareness into text-conditioned motion models by leveraging disjoint scene–motion and text–motion datasets through two adaptation stages: inbetweening and scene-aware inbetweening.
+                We introduce SceneAdapt, a framework that injects scene awareness into text-conditioned motion models by leveraging disjoint scene–motion and text–motion datasets through two adaptation stages: inbetweening and scene-aware inbetweening.
               </p>
             </td>
           </tr> 
@@ -183,6 +186,92 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+		<tr onmouseout="mira_stop()" onmouseover="mira_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <!-- <div class="two" id='mira_image'> -->
+                  <!-- <img src='images/POTTER.JPG' width="160"></div> -->
+                <img src='images/onlinehmr.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function mira_start() {
+                  document.getElementById('mira_image').style.opacity = "1";
+                }
+
+                function mira_stop() {
+                  document.getElementById('mira_image').style.opacity = "0";
+                }
+                mira_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="">
+                <papertitle> OnlineHMR: Video-based Online World-Grounded Human Mesh Recovery </papertitle>
+              </a>
+              <br>
+		<a href="https://tsukasane.github.io/">Yiwen Zhao*</a>,
+		<strong>Ce Zheng (project lead) </strong>,
+		<a href="https://yufu-wang.github.io/">Yufu Wang</a>,
+	      	<a href="">Hsueh-Han Daniel Yang</a>,
+			<a href="">Liting Wen</a>,
+              	<a href="https://www.laszlojeni.com/">Laszlo A. Jeni</a>.
+              <br>
+              <em> IEEE Conference on Computer Vision and Pattern Recognition(<b>CVPR</b>), 2026
+              <br>
+              <a href="">paper</a> &nbsp/&nbsp
+              <a href="">project page</a>
+              <p></p>
+              <p>
+                We propose OnlineHMR, a fully online framework for global human trajectory and motion recovery.
+              </p>
+            </td>
+          </tr> 
+
+		<tr onmouseout="mira_stop()" onmouseover="mira_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <!-- <div class="two" id='mira_image'> -->
+                  <!-- <img src='images/POTTER.JPG' width="160"></div> -->
+                <img src='images/mvmphmr.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function mira_start() {
+                  document.getElementById('mira_image').style.opacity = "1";
+                }
+
+                function mira_stop() {
+                  document.getElementById('mira_image').style.opacity = "0";
+                }
+                mira_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openaccess.thecvf.com/content/WACV2026/papers/Li_Training-free_Multi-view_4D_Human_Motion_Reconstruction_Virtual_Reality_System_WACV_2026_paper.pdf">
+                <papertitle> MAVERIX: Multimodal Audio-Visual Evaluation Reasoning IndeX </papertitle>
+              </a>
+              <br>
+		<a href="https://yijie-li2022.github.io/">Yijie Li</a>,
+		<strong>Ce Zheng (project lead) </strong>,
+		<a href="">Yijie He</a>,
+		<a href="https://joeljulin.github.io/">Joel Julin</a>,
+	      	<a href="">Ryosuke Ichikari</a>,
+	      	<a href="">Satoki Ogiso</a>,      
+	      	<a href="">Satoshi Nakae</a>,
+	      	<a href="">Akihiro Sato</a>,  
+	      	<a href="">Takeshi Kurata</a>,
+              	<a href="https://www.laszlojeni.com/">Laszlo A. Jeni</a>.
+              <br>
+              <em> IEEE/CVF Winter Conference on Applications of Computer Vision (<b>WACV</b>), 2026
+              <br>
+              <a href="https://openaccess.thecvf.com/content/WACV2026/papers/Li_Training-free_Multi-view_4D_Human_Motion_Reconstruction_Virtual_Reality_System_WACV_2026_paper.pdf">paper</a> &nbsp/&nbsp
+              <a href="https://github.com/Att100/MV4DHMR">project page</a>
+              <p></p>
+              <p>
+				  We propose a 4D Human Motion Reconstruction Virtual Reality System that integrates advanced 4D multi-view human mesh recovery and high-quality 3D environment reconstruction using 3D Gaussian Splatting.
+            	</p>
+            </td>
+          </tr> 
+			
 		<tr onmouseout="mira_stop()" onmouseover="mira_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -1083,9 +1172,11 @@
           <tr>
             <td style="padding:16px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
             <td width="75%" valign="center">
+				AC: NeruIPS 2025, ACM Multimedia 2025, 2026		
+				<br>
               Reviewer: TPAMI, IJCV, TIP, TCSVT, CVIU, TNNLS, Neurocomputing, Neural Networks
               <br>
-              Reviewer: CVPR, ICCV, NeurIPS, ICLR, SIGGRAPH Asia, ACM MM, 
+              Reviewer: CVPR, ICCV, NeurIPS, ICLR, SIGGRAPH Asia, ACM Multimedia, 
             </td>
           </tr>
         </tbody></table>
