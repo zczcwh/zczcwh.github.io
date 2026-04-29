@@ -1,16 +1,69 @@
 <!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>Ce Zheng</title>
-  
-  <meta name="author" content="Ce Zheng">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<!-- 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>"> -->
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Ce Zheng</title>
+    <meta name="author" content="Ce Zheng">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <!-- 新增弹窗样式 -->
+    <style>
+        /* 弹窗遮罩层 */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        /* 弹窗内容 */
+        .popup-content {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 500px;
+            text-align: center;
+        }
+        .popup-content p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .new-site-link {
+            color: #0066cc;
+            text-decoration: underline;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .confirm-btn {
+            background: #0066cc;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        .confirm-btn:hover {
+            background: #0052a3;
+        }
+    </style>
 </head>
-
 <body>
+    <!-- 新增弹窗层 -->
+    <div id="sitePopup" class="popup-overlay">
+        <div class="popup-content">
+            <p>The Chinese Version of my website (most up-to-date version) can be found in：<a href="https://www.cezhenghust.cn/" target="_blank" class="new-site-link">https://www.cezhenghust.cn/</a></p>
+            <p>If you would like to visit the English version (may not be regularly updated), you can click the "Yes" button.</p>
+            <button class="confirm-btn" onclick="closePopup()">Yes</button>
+        </div>
+    </div>
+
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
